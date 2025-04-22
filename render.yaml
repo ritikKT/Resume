@@ -1,0 +1,6 @@
+services:
+  - type: web
+    name: react-portfolio
+    env: static
+    buildCommand: pnpm run build
+    staticPublishPath: build
