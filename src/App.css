@@ -23,7 +23,10 @@
   font-size: calc(10px + 2vmin);
   color: white;
 }
-
+.algo-expert-icon-class {
+  height: 1.8rem;
+  width: 1.8rem;
+}
 .App-link {
   color: #61dafb;
 }

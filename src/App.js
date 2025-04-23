@@ -3,7 +3,9 @@ import Preloader from "../src/components/Pre";
 import Navbar from "./components/Navbar";
 import Home from "./components/Home/Home";
 import About from "./components/About/About";
+import AlgoExpert from "./components/Algoexpert/AlgoExpert";
 import Projects from "./components/Projects/Projects";
+import Leetcode from "./components/Leetcode/Projects";
 import Footer from "./components/Footer";
 import Resume from "./components/Resume/ResumeNew";
 import Zecoo from "./components/ZecooEngine/Zecoo";
@@ -38,6 +40,8 @@ function App() {
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/project" element={<Projects />} />
+          <Route path="/leetcode" element={<Leetcode />} />
+          <Route path="/algoexpert" element={<AlgoExpert />} />
           <Route path="/about" element={<About />} />
           <Route path="/resume" element={<Resume />} />
           <Route path="/zecoo" element={<Zecoo />} />

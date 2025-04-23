@@ -2,11 +2,13 @@ import React, { useState } from "react";
 import Navbar from "react-bootstrap/Navbar";
 import Nav from "react-bootstrap/Nav";
 import Container from "react-bootstrap/Container";
+import AiAlgoExpert from "./icons/algo-expert-icon";
 import logo from "../Assets/logo.png";
 import Button from "react-bootstrap/Button";
 import { Link } from "react-router-dom";
+import { SiLeetcode } from "react-icons/si";
 import { CgGitFork } from "react-icons/cg";
-import { ImMusic } from "react-icons/im";
+import { ImMusic, ImTelegram } from "react-icons/im";
 import {
   AiFillStar,
   AiOutlineHome,
@@ -62,6 +64,32 @@ function NavBar() {
             <Nav.Item>
               <Nav.Link
                 as={Link}
+                to="/leetcode"
+                onClick={() => updateExpanded(false)}
+              >
+                <SiLeetcode
+                  style={{ marginBottom: "2px" }}
+                />{" "}
+                My Leetcode
+              </Nav.Link>
+            </Nav.Item>
+
+            <Nav.Item>
+              <Nav.Link
+                as={Link}
+                to="/algoexpert"
+                onClick={() => updateExpanded(false)}
+              >
+                <AiAlgoExpert
+                  style={{ marginBottom: "2px" }}
+                />{" "}
+                Algoexpert Certificate
+              </Nav.Link>
+            </Nav.Item>
+
+            <Nav.Item>
+              <Nav.Link
+                as={Link}
                 to="/about"
                 onClick={() => updateExpanded(false)}
               >
@@ -94,17 +122,24 @@ function NavBar() {
 
             <Nav.Item>
               <Nav.Link
-                href="https://ritik.gq/"
+                href="https://t.me/ritikrobot"
+                target="_blank"
+                rel="noreferrer"
+              >
+                <ImTelegram style={{ marginBottom: "2px" }} /> Telegram Bot
+              </Nav.Link>
+            </Nav.Item>
+
+            <Nav.Item>
+              <Nav.Link
+                href="https://music.ritik.app/"
                 target="_blank"
                 rel="noreferrer"
               >
                 <ImMusic style={{ marginBottom: "2px" }} /> Music Website
               </Nav.Link>
             </Nav.Item>
-
             
-            
-
             <Nav.Item>
               <Nav.Link
                 as={Link}
