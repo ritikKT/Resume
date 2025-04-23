@@ -6,7 +6,7 @@ import AiAlgoExpert from "./icons/algo-expert-icon";
 import logo from "../Assets/logo.png";
 import Button from "react-bootstrap/Button";
 import { Link } from "react-router-dom";
-import { SiLeetcode } from "react-icons/si";
+import { SiFoodpanda, SiLeetcode } from "react-icons/si";
 import { CgGitFork } from "react-icons/cg";
 import { ImMusic, ImTelegram } from "react-icons/im";
 import {
@@ -17,6 +17,8 @@ import {
 } from "react-icons/ai";
 
 import { CgFileDocument } from "react-icons/cg";
+import { BiFoodMenu } from "react-icons/bi";
+import { GiFoodChain } from "react-icons/gi";
 
 function NavBar() {
   const [expand, updateExpanded] = useState(false);
@@ -127,6 +129,16 @@ function NavBar() {
                 rel="noreferrer"
               >
                 <ImTelegram style={{ marginBottom: "2px" }} /> Telegram Bot
+              </Nav.Link>
+            </Nav.Item>
+
+            <Nav.Item>
+              <Nav.Link
+                href="https://ritik.app/dinner-candy.html"
+                target="_blank"
+                rel="noreferrer"
+              >
+                <SiFoodpanda style={{ marginBottom: "2px" }} /> Dinner Candy
               </Nav.Link>
             </Nav.Item>
 

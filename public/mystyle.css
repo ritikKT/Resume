@@ -1,0 +1,693 @@
+@import url("https://fonts.googleapis.com/css?family=Lato:400,700");
+@font-face
+{
+    font-family: myfont;
+    src : url('Mightype Script.otf');
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    color: black;
+    background-color: #66CCCC;
+    font-family: "Lato", sans-serif;
+}
+.navbar {
+    position: sticky;
+    top: 0;
+    height: 70px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    background: #66CCCC;
+    z-index: 1;
+}
+.navbar-center {
+    width: 100%;
+    max-width: 1170px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 1.5rem;
+}
+.nav-icon {
+    font-size: 1.5rem;
+}
+.cart-btn {
+    position: relative;
+    cursor: pointer;
+}
+.cart-items {
+    position: absolute;
+    top: -8px;
+    right: -8px;
+    background: #f09d51;
+    padding: 0 5px;
+    border-radius: 40%;
+    color: white;
+}
+
+
+.hero {
+    min-height: calc(100vh - 60px);
+    background: url("hero-bg.jpg") center/cover no-repeat;
+    display: flex;
+   /* height:500px; width:1000px; */
+    align-items: center;
+    justify-content: center;
+}
+.banner {
+    text-align: center;
+    background: rgba(255, 255, 255, 0.8);
+    display: inline-block;
+    padding: 1.5rem;
+}
+.banner-title {
+    font-size: 3.4rem;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    margin-bottom: 3rem;
+    color: mediumvioletred;
+    font-family: Jokerman,sans-serif;
+}
+.banner-btn {
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-family: Jokerman;
+    background: #f09d51;
+    cursor: pointer;
+    background-color: #4CAF50; /* Green */
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    border-radius: 5px;
+}
+.banner-btn:hover {
+    background: transparent;
+    color: #e84903;
+}
+
+.products {
+    padding: 3rem 0;
+}
+.section-title h2 {
+    text-align: center;
+    font-size: 2.5rem;
+    margin-bottom: 5rem;
+    letter-spacing: 0.1em;
+}
+.products-center {
+    width: 90vw;
+    margin: 0 auto;
+    max-width: 1170px;
+    display: grid;
+    /*  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));  */
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    grid-column-gap: 1.5rem;
+    grid-row-gap: 2rem;
+}
+.section-title
+{
+    color:black;
+    font-family: myfont;
+    font-size: 120px;
+    margin:50px;
+    text-align:center
+}
+.main-heads
+{
+   font-size: 120px;
+    margin:50px;
+    text-align:center
+}
+.img-container {
+    position: relative;
+    overflow: hidden;
+}
+.bag-btn {
+    position: absolute;
+    top: 50%;
+    right: 0;
+    background: #f09d51;
+    border: none;
+    text-transform: uppercase;
+    padding: 0.5rem 0.75rem;
+    letter-spacing: 0.1em;
+    font-weight: bold;
+    transition: 0.3s linear;
+    transform: translateX(101%);
+    cursor: pointer;
+}
+.bag-btn:hover {
+    color: white;
+}
+.len {
+    margin-right: 0.5rem;
+}
+.img-container:hover .bag-btn {
+    transform: translateX(0%);
+}
+.product-img {
+    display: block;
+    border-radius: 10px;
+    width: 100%;
+    min-height: 12rem;
+
+}
+.cart-img
+{
+    border-radius: 3px;
+}
+.img-container:hover .product-img {
+    opacity: 0.5;
+}
+h3,h2
+{
+    text-align:center;
+    color:black;
+
+}
+.product h3 {
+    text-transform: capitalize;
+    font-size: 1.1rem;
+    margin-top: 1rem;
+    letter-spacing: 0.1em;
+    text-align: center;
+}
+
+.product h4 {
+    margin-top: 0.7rem;
+    letter-spacing: 0.1em;
+    color: #f09d51;
+    text-align: center;
+}
+
+
+
+.cart-overlay
+{
+    position: fixed;
+    top:0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background: rgba(240,157,81,0.5);
+    z-index:2;
+    visibility: hidden;
+}
+#cart-image
+{
+    width:40px; height:40px;
+    outline:none;
+}
+.cart{
+    position: fixed;
+    top:0;
+    right: 0;
+    width: 30%;
+    height: 100%;
+    overflow: auto;
+    z-index:3;
+    background: rgb(231, 226, 221);
+    padding: 1.5rem;
+}
+.login-overlay{
+    position: fixed;
+    top:0%;
+    right: 0%;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    z-index:3;
+    background: none;
+    padding: 1.5rem;
+    visibility: hidden;
+}
+.signup-overlay{
+    position: fixed;
+    top:0%;
+    right: 0%;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    z-index:3;
+    background: none;
+    padding: 1.5rem;
+    visibility: hidden;
+}
+.success{
+    position: fixed;
+    top:0%;
+    right: 0%;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    z-index:4;
+    background: none;
+    padding: 1.5rem;
+    visibility: hidden;
+}
+.searchresults{
+    position: fixed;
+background-image: linear-gradient(to right,cyan,green);
+    top:8%;
+    right: 0%;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    z-index:2;
+
+    padding: 1.5rem;
+    visibility: hidden;
+}
+
+.payment
+{
+    position: fixed;
+    top:0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    z-index:6;
+    background: #66CCCC;
+    padding: 1.5rem;
+    visibility: hidden;
+}
+.details-form{
+    position: fixed;
+    top:0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    z-index:5;
+    background: #66CCCC;
+    padding: 1.5rem;
+    visibility: hidden;
+}
+.thankyou
+{
+    position: fixed;
+    top:0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    z-index:7;
+    background: #66CCCC;
+    padding: 1.5rem;
+    visibility: hidden;
+}
+#form-1{
+    visibility: visible;
+}
+#form-2{
+    visibility: visible;
+}
+.buttondine,
+.buttonhome
+{
+    background-color: #4CAF50;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    font-weight: bold;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 32px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 20px;
+    border:none;
+    outline: none;
+}
+.left-overlay{
+    position: fixed;
+    top:0;
+    left: 0;
+    width: 30%;
+    height: 100%;
+    overflow: auto;
+    z-index:3;
+    background: rgb(231, 226, 221);
+    padding: 1.5rem;
+    visibility: hidden;
+}
+#fas-fa-bars
+{
+    width:30px; height:30px;
+    outline:none;
+    background-color: #66CCCC;
+}
+#description
+{
+    font-weight: bold;
+    color: burlywood;
+}
+.view
+{
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-family: Jokerman;
+    background: #f09d51;
+    cursor: pointer;
+    background-color: #4CAF50; /* Green */
+    border: none;
+    color: white;
+    padding: 7px 16px;
+   /* margin :1px; */
+
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    align-items: center;
+    border-radius: 5px;
+}
+#gettotal
+{
+
+    border: none;
+    color: black;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    border-radius: 10px;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+}
+
+.view-div1
+{
+    background-color: sandybrown;
+    border-radius: 2px;
+}
+.view-imge
+{
+    background-color: sandybrown;
+    border-radius: 2px;
+}
+.view-div2
+{
+    background-color: sandybrown;
+    border-radius: 2px;
+}
+.view-overlay{
+    position: fixed;
+    top:10%;
+    /* right: 20%; */
+     left: 8%;
+    width: 80%; height:70%;
+    z-index:2;
+    background: rgba(0,0,0,0);
+    padding: 1.5rem;
+    overflow:hidden;
+    display: flex;
+    visibility: hidden;
+}
+.view-overlay>div{
+
+}
+.view-add-to-cart{
+background-color: #4CAF50;
+border: none;
+    outline: none;
+color: white;
+padding: 15px 32px;
+text-align: center;
+text-decoration: none;
+display: inline-block;
+font-size: 16px;
+margin: 4px 2px;
+cursor: pointer;
+border-radius: 30px;
+}
+.view-add-to-cart:hover
+{
+    background-color:sandybrown ;
+    color:brown;
+}
+.close-icon-view
+{
+    z-index:4;
+    height: 10px; width: 10px;
+}
+.cart-button
+{
+    outline:none;
+    border: none;
+    background-color: #66CCCC;
+}
+.close-cart
+{
+    font-size: 1.7rem;
+    cursor: pointer;
+    border: none;
+    outline: none;
+}
+.cart h2 {
+    text-transform: capitalize;
+    text-align: center;
+    letter-spacing: 0.1em;
+    margin-bottom: 2rem;
+}
+.cart-item
+{
+  display:grid;
+    align-item:center;
+    grid-template-columns: auto 1fr auto;
+    grid-column-gap: 1.5rem;
+    margin: 1.5rem 0;
+   /* display: flex; */
+}
+.cart-item img {
+    width: 75px;
+    height: 75px;
+}
+.item-amount {
+    text-align: center;
+}
+#pdesc
+{
+    letter-spacing: 0.1em;
+}
+#dollar
+{
+    text-align: center;
+    font-size: 35px;
+    font-family: myfont;
+}
+.fa-chevron-up,
+.fa-chevron-down {
+    color: #f09d51;
+    cursor: pointer;
+    font-size: 30px; ;
+}
+.fa-chevron-up-view,
+.fa-chevron-down-view {
+    color: #f09d51;
+    cursor: pointer;
+    font-size: 30px;
+}
+.cart-footer
+{
+    margin-top:2rem;
+    letter-spacing: 0.5rem;
+    text-align:center;
+}
+.main-footer {
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: cyan;
+    color: blue;
+    text-align: right;
+    letter-spacing: 0.2em;
+}
+
+
+.email-signup-thankyou {
+    font-family: sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    background: #333;
+    padding: 10%;
+}
+.content {
+    margin: auto; /* Magic! */
+    max-width: 700px;
+    color: #333;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.55), 0 3px 6px rgba(0, 0, 0, 0.23);
+    background: url('https://www.crafta.co.il/images/paper-plane.gif') no-repeat #fff;
+    background-position: right 5px bottom 5px;
+    background-size: 10em;
+    text-align: center;
+    position: relative;
+    padding: 10%;
+    border-radius: 5px;
+}
+
+h2,h3{
+    text-align:left;
+    padding:5% 5% 0% 3%;
+    color:#333;
+    font-weight:900;
+}
+.main-content > h1 {
+    color:#333;
+    text-transform:uppercase;
+    margin-top:-2%;
+    font-size:2.5em;
+    font-weight:900;
+}
+
+.formstyle{
+
+    max-width: 400px;
+    margin: 10px auto;
+    padding: 26px;
+    background: #F7F7F7;
+}
+.formstyle h1{
+    background: #43D1AF;
+    padding: 20px 0;
+    font-size: 140%;
+    font-weight: 300;
+    text-align: center;
+    color: #fff;
+    margin: -16px -16px 16px -16px;
+}
+.formstyle input[type="text"],
+.formstyle input[type="date"],
+.formstyle input[type="datetime"],
+.formstyle input[type="email"],
+.formstyle input[type="number"],
+.formstyle textarea,
+.formstyle select
+{
+
+    outline: none;
+    box-sizing: border-box;
+    width: 100%;
+    background: #fff;
+    margin-bottom: 4%;
+    border: 1px solid #ccc;
+    padding: 3%;
+    color: #555;
+    font: 95% Arial, Helvetica, sans-serif;
+}
+.formstyle input[type="text"]:focus,
+.formstyle input[type="date"]:focus,
+.formstyle input[type="datetime"]:focus,
+.formstyle input[type="email"]:focus,
+.formstyle input[type="number"]:focus,
+.formstyle textarea:focus,
+.formstyle select:focus
+{
+    box-shadow: 0 0 5px #43D1AF;
+    padding: 3%;
+    border: 1px solid #43D1AF;
+}
+
+.formstyle input[type="submit"],
+.formstyle input[type="button"],
+.button,
+.paym{
+    box-sizing: border-box;
+    width: 100%;
+    padding: 3%;
+    background: #43D1AF;
+    border-bottom: 2px solid #30C29E;
+    border-top-style: none;
+    border-right-style: none;
+    border-left-style: none;
+    color: #fff;
+}
+
+
+.container-fluid{
+    background-color: #2bb666;
+}
+.fa {
+    padding: 20px;
+    font-size: 30px;
+    width: 50px;
+    text-align: center;
+    text-decoration: none;
+    margin: 5px 2px;
+}
+
+.fa:hover {
+    opacity: 0.7;
+}
+
+.fa-facebook {
+    background: #3B5998;
+    color: white;
+}
+
+.fa-instagram {
+    background: #55ACEE;
+    color: white;
+    font-size: xx-large;
+}
+
+.fa-google {
+    background: #dd4b39;
+    color: white;
+}
+.fa-youtube {
+    background: #bb0000;
+    color: white;
+}
+.div-success
+{
+
+    padding: 5px;
+}
+.v-align
+{
+    vertical-align: middle;
+    horiz-align: center;
+    margin: 40%;
+}
+.flex-container {
+    display: flex;
+    flex-wrap: nowrap;
+    background-color: DodgerBlue;
+}
+
+.flex-container > div {
+    background-color: #f1f1f1;
+    width: 100px;
+    margin: 10px;
+    text-align: center;
+    line-height: 75px;
+    font-size: 30px;
+}
+#textboxid
+{
+    height:80px;
+    font-size:50px;
+    border-radius: 30px;
+    border: none; outline: none;
+}
+#searchfood
+{
+    text-align: center;
+}

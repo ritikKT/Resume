@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<head>
+    <link rel="stylesheet" href="mystyle.css">
+    <script src="js.js"></script>
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.1.0/css/all.css">
+    <title>MENU</title>
+</head>
+<body onload="func(0); func2(); func3(); func4(); funcrandom();">
+<nav class="navbar">
+    <div class="navbar-center">
+   <button class="cart-button" onclick="showLeftOverlay()"> <span class="nav-icon">
+        <img src="three.png" id="fas-fa-bars">
+    </span> </button>
+        <img src="dc.png" alt="image" >
+        <div class="cart-btn">
+        <span class="nav-icon">
+            <button class="cart-button" onclick="showCartOnly()"><img src="cart.png" id="cart-image"> </button>
+        </span>
+            <div class="cart-items">0</div>
+        </div>
+    </div>
+</nav>
+<header class="hero">
+    <div class="banner">
+        <h1 class="banner-title">DINNER CANDY</h1>
+
+        <a href="#product-space" class="banner-btn">ORDER NOW</a>
+    </div>
+</header>
+<center>
+    <label for="gsearch"><h2 id="searchfood">Search FOOD</h2></label><br>
+    <input type="text" id="textboxid" size="20" name="textboxid" placeholder="SEARCH">
+    <button class="view-add-to-cart" onclick="search()">SEARCH</button><br>
+    <h1 id="nothing">YOU FORGOT TO PUT SOMETHING IN SEARCH BAR</h1>
+    <br><br><h1>CURRENTLY EMPTY TABLES</h1>
+</center>
+<div class="flex-container" id="demo2">
+
+</div>
+
+
+<div class="searchresults" id="searchresults">
+   <button class="view-add-to-cart" onclick="hidesearchresults()">
+       CLOSE</button>
+    <button class="view-add-to-cart" style="float:right" onclick="hidesearchresults()">
+        CLOSE</button>
+    <center>
+        <label for="gsearch"><h2 id="searchfood">Search FOOD</h2></label><br>
+        <input type="text" id="textboxid" size="20" name="textboxid" placeholder="SEARCH">
+        <button class="view-add-to-cart" onclick="search()">SEARCH</button>
+    </center>
+    <div class="section-title">SEARCH RESULTS</div>
+
+<section class="products" >
+<div class="products-center" id="product4-space">
+    <!--    <article class="product" id="product1html">
+
+        </article>
+        <article class="product" id="product2html">
+
+           </article>
+           <article class="product" id="product3html">
+
+           </article>
+           <article class="product" id="product4html">
+
+           </article> -->
+</div></section></div>
+<section class="products">
+    <div class="section-title">
+        <div id="main-heads">TODAY'S SPECIAL</div>
+    </div>
+    <div class="products-center" id="product-space">
+     <!--   <article class="product" id="product1html">
+
+        </article>
+        <article class="product" id="product2html">
+
+           </article>
+           <article class="product" id="product3html">
+
+           </article>
+           <article class="product" id="product4html">
+
+           </article> -->
+       </div>
+    <center><button class="view-add-to-cart" onclick="prevItem()">PREVIOUS ITEM</button>
+        <button class="view-add-to-cart" onclick="nextItem()">NEXT ITEM</button>
+    </center>
+    <br>
+    <br>
+    <div class="section-title">
+        <div id="main-heads">BREAKFAST</div>
+    </div>
+    <div class="products-center" id="product2-space">
+        <!--    <article class="product" id="product1html">
+
+            </article>
+            <article class="product" id="product2html">
+
+               </article>
+               <article class="product" id="product3html">
+
+               </article>
+               <article class="product" id="product4html">
+
+               </article> -->
+    </div>
+    <div class="section-title">
+        <div id="main-heads">PIZZA AND PASTA</div>
+    </div>
+    <div class="products-center" id="product5-space">
+
+        <!--    <article class="product" id="product1html">
+
+            </article>
+            <article class="product" id="product2html">
+
+               </article>
+               <article class="product" id="product3html">
+
+               </article>
+               <article class="product" id="product4html">
+
+               </article> -->
+    </div>
+    <div class="section-title">
+        <div id="main-heads">BEVRAGES</div>
+    </div>
+    <div class="products-center" id="product3-space">
+        <!--    <article class="product" id="product1html">
+
+            </article>
+            <article class="product" id="product2html">
+
+               </article>
+               <article class="product" id="product3html">
+
+               </article>
+               <article class="product" id="product4html">
+
+               </article> -->
+    </div>
+   </section>
+   <div class="left-overlay" id="left-overlay">
+    <span class="close-cart">
+               <button class="close-cart" onclick="hideLeftOverlay()"><img src="close-icon.png" width="40px" height="40px"></button>
+           </span>
+       <center>
+           <button class="view-add-to-cart" onclick="viewlogin()">LOGIN</button><br>
+           <button class="view-add-to-cart" onclick="viewsignup()">SIGNUP</button>
+           <h2>RESTAURAUNT</h2></center>
+       <p>
+           A restaurant (sometimes known as a diner) is a place where cooked food is sold to the public, and where people sit down to eat it. It is also a place where people go to enjoy the time and to eat a meal.
+
+           Some restaurants are a chain, meaning that there are restaurants which have the same name and serve the same food. McDonald's, Burger King, and Pizza Hut are examples of chain restaurants that are all over the world. These restaurants serve fast food, that is, inexpensive food, prepared and served quickly. At some, you do not have to even get out of the car to eat. You can pay and get your order from a window. These places are called drive-throughs.
+
+           There are also chain restaurants that serve slightly more expensive food. They are called fast casual restaurants. Applebee's and Perkins are examples of this type of chain restaurant.
+
+           Haute cuisine or 'fine dining' is found in a guide, such as the Michelin Guide, the most famous restaurant guide in the world. Their 3-star rosettes are given only to restaurants with the highest standards of cooking and service. Interestingly, the Guide gives more 3-stars to Tokyo and Kyoto than to Paris, London and New York together.[1][2] Traditionally, the restaurants of top hotels such as the Hotel de Paris in Monte Carlo or the Hôtel Ritz Paris were the main places recognized for fine dining. Today, most Michelin Guide restaurants are separate establishments.
+<br><br>
+       <center> <strong>  WE WERE ESTABLISHED IN  2001
+           <br> WE ARE OPEN 24 HOURS A DAY
+           <br> 7 DAYS A WEEK </strong> </center>
+       </p>
+   </div>
+<div class="login-overlay" id="login-overlay">
+
+</div>
+<div class="signup-overlay" id="signup-overlay">
+
+</div>
+<div class="success" id="success">
+
+</div>
+   <div class="cart-overlay" id="cart-overlay">
+       <div class="cart" id="cart-id">
+           <span class="close-cart">
+               <button class="close-cart" onclick="hideCartOnly()"><img src="close-icon.png" width="40px" height="40px"></button>
+           </span>
+           <h2>Your Cart:</h2>
+           <div class="cart-item" id="cart_item_1" >
+             <!--  <img src="p1.jpg" alt="cart item 1">
+               <div>
+                   <i class="item-name">Item 2</i><br><p class="item-qty" id="product1">0</p><br>
+                   <button class="remove" onclick="remove_item_from_cart()"> <i class="fa fa-trash"></i></button>
+               </div>
+               <div>
+                   <button class="fas-chevron-up" id="ch_up" onclick="ch_up()"> <i class="fas fa-chevron-up"></i></button>
+                   <br><button class="fas-chevron-down" id="ch_down" onclick="ch_down()"> <i class="fas fa-chevron-down"></i></button>
+               </div> -->
+           </div>
+           <center>
+        <div>
+            <button class="banner-btn" onclick="clearCart(); clearCart();">
+                CLEAR CART
+            </button><br><div id="gettotal"></div>
+            <div id="Empty"></div>
+            <br>
+            <button class="banner-btn" onclick="checkout()">
+                CHECKOUT
+            </button>
+        </div></center>
+    </div>
+</div>
+<div class="view-overlay" id="view-overlay">
+</div>
+
+<div class="details-form" id="details-form">
+    <center>
+        <button class="buttondine" onclick="form1show();">Dine-In</button> Or
+        <button class="buttonhome" onclick="form2show();">Home Delivery</button>
+    </center>
+    <div id="form1">
+  <!--  <form id="form-1">
+        <fieldset>
+            <legend>Your Info:</legend>
+            <label for="name">Name:</label><br>
+            <input type="text" id="name1" name="name"><br>
+            <label for="phone">Phone number:</label><br>
+            <input type="number" id="phone1" name="name"><br>
+            <label for="email">Email:</label><br>
+            <input type="email" id="email1" name="name"><br>
+            <label for="Address">Address:</label><br>
+            <input type="text" id="Address" name="name"><br><br>
+            <input type="submit" value="Submit">
+
+        </fieldset>
+
+    </form> --> </div>
+    <div id="form2">
+   <!-- <form id="form-2">
+        <fieldset>
+            <legend>Your Info:</legend>
+            <label for="name">Name:</label><br>
+            <input type="text" id="name" name="name"><br>
+            <label for="phone">Phone number:</label><br>
+            <input type="number" id="phone" name="name"><br>
+            <label for="email">Email:</label><br>
+            <input type="email" id="email" name="name"><br><br>
+            Dine-In for <input type="number"></input> people<br><br>
+            <input type="submit" value="Submit">
+
+        </fieldset>
+
+    </form> --> </div>
+</div>
+<div class="thankyou" id="thankyou">
+    <div class="header-custom email-signup-thankyou">
+        <div class="content">
+            <div class="left-hole"></div>
+            <div class="right-hole"></div>
+            <div class="main-content">
+                <h1>Success! You are our lucky customer.</h1>
+                <p>Thank you for , it means a lot to us, just like you do! We really appreciate you giving us a moment of your time.</p>
+                <p class="strong">Your coupon code can be found in your welcome email.</p>
+                <ul>
+                    <li>Fast Orders</li>
+                    <li>Quality Food in Rajpura</li>
+                    <li>Made by Ritik Bansal,Yatin Ahuja,Vansh Saini and Dhruv</li>
+                </ul>
+            </div>
+
+        </div>
+    </div>
+</div>
+<div class="payment" id="payment">
+
+</div>
+<center><h1>CURRENTLY EMPTY TABLES</h1></center>
+<div class="flex-container" id="demo">
+
+</div>
+<div class="main-footer">
+    <h1 style="text-align: left">City we deliver to</h1>
+    <h3 style="color:brown; margin:0px 0px 20px 0px;">ONLY RAJPURA AND NEARBY RAJPURA</h3>
+    <a href="https://www.facebook.com/dilsefoodieofficial/" class="fa fa-facebook"></a>
+    <a href="https://www.instagram.com/dilsefoodie/?hl=en" class="fa fa-instagram"></a>
+    <a href="https://google.com" class="fa fa-google"></a>
+    <a href="https://www.youtube.com/channel/UCxiBEi8RF-l6ib4SMDTd35w" class="fa fa-youtube"></a>
+</div>
+
+</body>
+</html>
+
+
+
