@@ -52,7 +52,7 @@ export default function AlgoExpertCertificate() {
       {/* ───── PDF Page ───── */}
       <Row className="justify-content-center mb-3 mt-3">
         <Document
-          file="https://certificate.algoexpert.io/AlgoExpert%20Certificate%20AE-6b87897aa7"
+          file="https://raw.githubusercontent.com/RitikBansal/Resume/master/algo_expert_certificate.pdf"
           loading="Loading certificate… Please be patient it takes some time to load 😬"
           className="d-flex justify-content-center"
         >
