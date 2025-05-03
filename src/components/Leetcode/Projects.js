@@ -45,7 +45,7 @@ export default function AlgoExpertCertificate() {
             style={{ maxWidth: "250px" }}
           >
             <AiOutlineDownload />
-            &nbsp;Download CV
+            &nbsp;Download Certificate
           </Button>
         </Row>
 
@@ -73,7 +73,7 @@ export default function AlgoExpertCertificate() {
             style={{ maxWidth: "250px" }}
           >
             <AiOutlineDownload />
-            &nbsp;Download CV
+            &nbsp;Download Certificate
           </Button>
         </Row>
     </Container>

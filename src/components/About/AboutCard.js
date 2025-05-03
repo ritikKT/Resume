@@ -7,14 +7,14 @@ function AboutCard() {
     <Card className="quote-card-view">
       <Card.Body>
         <blockquote className="blockquote mb-0">
-          <p style={{ textAlign: "justify" }}>
-            Hi Everyone, I am <span className="purple">Ritik Bansal </span>
-            from <span className="purple"> Rajpura,Punjab, India.</span>
-            <br />I am pursuing CSE in BTech from Chitkara University India.
+        <p style={{ textAlign: "justify" }}>
+            Hi Everyone, I am <span className="purple">Ritik Bansal</span> from 
+            <span className="purple"> Rajpura, Punjab, India.</span>
+            <br />I have completed my BTech in Computer Science and Engineering (CSE) from Chitkara University, India.
             <br />
             <br />
-            Apart from coding, some other activities that I love to do!
-          </p>
+            Apart from coding, there are several other activities that I love to do!
+        </p>
           <ul>
             <li className="about-activity">
               <ImPointRight /> Playing Vedio Games

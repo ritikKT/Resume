@@ -37,5 +37,9 @@
   <noscript>You need to enable JavaScript to run this app.</noscript>
   <div id="root"></div>
 </body>
-
+<script>
+  if (window.location.pathname === "/another-site.html") {
+    window.location.href = "/another-site.html"; // Redirect if needed for clarity.
+  }
+</script>
 </html>

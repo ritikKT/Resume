@@ -134,7 +134,7 @@ function NavBar() {
 
             <Nav.Item>
               <Nav.Link
-                href="https://ritik.app/dinner-candy.html"
+                href="https://dinner-candy.ritik.app/"
                 target="_blank"
                 rel="noreferrer"
               >
