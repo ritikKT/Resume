@@ -37,7 +37,7 @@ export default function AlgoExpertCertificate() {
       <Particle />
 
       {/* ───── Top Download Button ───── */}
-      <Row style={{ justifyContent: "center", position: "relative" }}>
+      {/* <Row style={{ justifyContent: "center", position: "relative" }}>
           <Button
             variant="primary"
             href={cvFile}
@@ -47,7 +47,7 @@ export default function AlgoExpertCertificate() {
             <AiOutlineDownload />
             &nbsp;Download Certificate
           </Button>
-        </Row>
+        </Row> */}
 
       {/* ───── PDF Page ───── */}
       <Row className="justify-content-center mb-3 mt-3">
@@ -65,7 +65,7 @@ export default function AlgoExpertCertificate() {
       </Row>
 
       {/* ───── Bottom Download Button ───── */}
-      <Row style={{ justifyContent: "center", position: "relative" }}>
+      {/* <Row style={{ justifyContent: "center", position: "relative" }}>
           <Button
             variant="primary"
             href={cvFile}
@@ -75,7 +75,7 @@ export default function AlgoExpertCertificate() {
             <AiOutlineDownload />
             &nbsp;Download Certificate
           </Button>
-        </Row>
+        </Row> */}
     </Container>
   );
 }
