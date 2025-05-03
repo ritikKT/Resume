@@ -7,6 +7,7 @@ import logo from "../Assets/logo.png";
 import Button from "react-bootstrap/Button";
 import { Link } from "react-router-dom";
 import { SiFoodpanda, SiLeetcode } from "react-icons/si";
+import { HiOutlineMail } from "react-icons/hi";
 import { CgGitFork } from "react-icons/cg";
 import { ImMusic, ImTelegram } from "react-icons/im";
 import {
@@ -73,6 +74,19 @@ function NavBar() {
                   style={{ marginBottom: "2px" }}
                 />{" "}
                 My Leetcode
+              </Nav.Link>
+            </Nav.Item>
+
+            
+            <Nav.Item>
+              <Nav.Link
+                as="a"
+                href="https://email.ritik.app"
+                target="_blank"
+                rel="noopener noreferrer"
+                onClick={() => updateExpanded(false)}
+              >
+                <HiOutlineMail style={{ marginBottom: "2px" }} /> Temporary Email 
               </Nav.Link>
             </Nav.Item>
 
